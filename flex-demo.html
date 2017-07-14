@@ -1,0 +1,52 @@
+<!DOCUTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>flex-demo</title>
+    <style>
+        .container {
+            margin: 20px auto;
+            border: 1px solid yellowgreen;
+            display: flex;
+        }
+
+        .side {
+            border: 1px solid rebeccapurple;
+            margin: 1em;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="side">
+            <ul>
+                <li>Home</li>
+                <li>Taco Menu</li>
+                <li>Draft List</li>
+                <li>Hours</li>
+                <li>Directons</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div>
+            <div class="side">
+                <p>这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。</p>
+            </div>
+            <div class="side">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+                    lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue
+                    eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed
+                    ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc
+                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed
+                    ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum.
+                    Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

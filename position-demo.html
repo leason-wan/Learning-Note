@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>css learning</title>
+    <style>
+        * {
+            margin: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            border: 2px solid green;
+        }
+
+        .nav {
+            width: 200px;
+            border: 2px solid red;
+            color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .section {
+            border: 1px solid yellow;
+            margin-left: 200px;
+        }
+
+        .footer {
+            border: 2px solid green;
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>Taco Menu</li>
+                <li>Draft List</li>
+                <li>Hours</li>
+                <li>Directions</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            section 的 margin-left 样式确保了有足够的空间容纳 nav 元素。
+        </div>
+
+        <div class="section">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas
+            odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae
+            massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+            Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
+            ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus
+            gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras
+            ac leo purus. Mauris quis diam velit.
+        </div>
+
+        <div class="section">
+            注意观察当你调整浏览器窗口时发生了什么。效果很赞！
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        如果你使用了一个固定定位的页眉或页脚，确保有足够的空间来显示它们！我在 body 上面加了 margin-bottom 。
+    </div>
+</body>
+
+</html>

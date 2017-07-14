@@ -1,0 +1,94 @@
+<!DOCUTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>flex-demo2</title>
+    <style>
+        .HolyGaril {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header,
+        footer {
+            background-color: #666666;
+            flex: 1;
+        }
+
+        .HolyGrail-body {
+            flex: 3;
+            display: flex;
+        }
+
+        .HolyGrail-content {
+            background-color: #D6D6D6;
+            flex: 1;
+        }
+
+        .HolyGrail-nav {
+            background-color: #77BBDD;
+            flex: 0 0 12em;
+            order: -1;
+        }
+
+        .HolyGrail-ads {
+            background-color: #FF6633;
+            flex: 0 0 20em;
+        }
+
+        .InputAddOn {
+            display: flex;
+            padding: 5em;
+        }
+
+        .InputAddOn-item {
+            flex: 1;
+        }
+
+        .InputAddOn-filed {
+            flex: 1;
+        }
+
+        .Media {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .Media-figure {
+            margin-right: 1em;
+            width: 20%;
+        }
+
+        .Media-body {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body class="HolyGaril">
+    <header> I am a header </header>
+    <div class="HolyGrail-body">
+        <main class="HolyGrail-content">
+            <div class="InputAddOn">
+                <span class="InputAddOn-item">输入框布局：</span>
+                <input type="text" class="InputAddOn-filed">
+                <button class="InputAddOn-item">点击一下</button>
+            </div>
+        </main>
+        <nav class="HolyGrail-nav"> I am nav </nav>
+        <aside class="HolyGrail-ads">
+            <div class="Media">
+                <img class="Media-figure" src="29.svg" alt="lalala">
+                <p class="Media-body">Often times, there are certain elements within our design that we'd like to ensure can fit into the viewport
+                    in their entirety. Normally, we'd have to use JavaScript to do this. Check the size of the viewport and
+                    then resize any elements on the page accordingly. If the user resizes the browser then the script runs
+                    again to resize the elements on the page.</p>
+            </div>
+        </aside>
+    </div>
+    <footer> I am a footer </footer>
+</body>
+
+</html>

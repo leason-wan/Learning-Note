@@ -1,0 +1,179 @@
+<!DOCUTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>flex-demo1</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+        /*form flex*/
+
+        .container {
+            padding: 10px 0;
+            margin: 0 100 auto;
+            padding: 1em;
+            background-color: white;
+        }
+
+        .form-row {
+            margin: 1em;
+            display: flex;
+        }
+
+        .form-row label {
+            padding-right: 10px;
+            flex: 1;
+        }
+
+        .form-row input {
+            flex: 1;
+        }
+        /*column-layout flex*/
+
+        .column-layout {
+            max-width: 1300px;
+            background-color: #FFF;
+            margin: 40px auto 0 auto;
+            line-height: 1.65;
+            padding: 20px 50px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .main-column {
+            flex: 2;
+            order: 2;
+        }
+
+        .sidebar-one {
+            flex: 1;
+            order: 1;
+        }
+
+        .sidebar-two {
+            flex: 1;
+            order: 3;
+        }
+        /*call-out flex*/
+
+        .call-outs-container {
+            max-width: 1400px;
+            margin: 40px auto 0 auto;
+            /* display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around; */
+        }
+
+        .call-out {
+            padding: 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            flex-basis: 30%;
+        }
+         
+        @media(min-width:900px) {
+            .call-outs-container {
+                display: flex;
+                justify-content: space-around;
+            }
+        } 
+
+        .call-out:nth-child(1) {
+            background-color: #c0dbe2;
+        }
+
+        .call-out:nth-child(2) {
+            background-color: #cdf1c3;
+        }
+
+        .call-out:nth-child(3) {
+            background-color: #ccb9da;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- form flex -->
+    <div class="container">
+        <form action="">
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-row">
+                <label for="favColor">Favorite Color:</label>
+                <input type="text" id="favColor">
+            </div>
+        </form>
+    </div>
+
+    <!-- column-layout flex -->
+    <div class="column-layout">
+        <div class="main-column">
+            <h2>Main Column</h2>
+            <p>Learn how to use Flexbox to create different layouts. Link to my new "Git a Developer Job" course: https://www.udemy.com/git-a-web-devel...
+                Link to code used in this video: http://codepen.io/anon/pen/VKxRoE?edi... Link to more about browser support:
+                http://caniuse.com/#feat=flexbox Add me on Twitter for webDev updates and cat pics: https://twitter.com/learnwebcode
+            </p>
+            <p>Learn how to use Flexbox to create different layouts. Link to my new "Git a Developer Job" course: https://www.udemy.com/git-a-web-devel...
+                Link to code used in this video: http://codepen.io/anon/pen/VKxRoE?edi... Link to more about browser support:
+                http://caniuse.com/#feat=flexbox Add me on Twitter for webDev updates and cat pics: https://twitter.com/learnwebcode
+            </p>
+            <p>Learn how to use Flexbox to create different layouts. Link to my new "Git a Developer Job" course: https://www.udemy.com/git-a-web-devel...
+                Link to code used in this video: http://codepen.io/anon/pen/VKxRoE?edi... Link to more about browser support:
+                http://caniuse.com/#feat=flexbox Add me on Twitter for webDev updates and cat pics: https://twitter.com/learnwebcode
+            </p>
+            <p>Learn how to use Flexbox to create different layouts. Link to my new "Git a Developer Job" course: https://www.udemy.com/git-a-web-devel...
+                Link to code used in this video: http://codepen.io/anon/pen/VKxRoE?edi... Link to more about browser support:
+                http://caniuse.com/#feat=flexbox Add me on Twitter for webDev updates and cat pics: https://twitter.com/learnwebcode
+            </p>
+        </div>
+        <div class="sidebar-one">
+            <h3>Sidebar One</h3>
+            <p>Learn how to use Flexbox to create different layouts. Link to my new "Git a Developer Job" course: https://www.udemy.com/git-a-web-devel...
+                Link to code used in this video: http://codepen.io/anon/pen/VKxRoE?edi... Link to more about browser support:
+                http://caniuse.com/#feat=flexbox Add me on Twitter for webDev updates and cat pics: https://twitter.com/learnwebcode
+            </p>
+        </div>
+        <div class="sidebar-two">
+            <h3>Sidebar Two</h3>
+            <p>Learn how to use Flexbox to create different layouts. Link to my new "Git a Developer Job" course: https://www.udemy.com/git-a-web-devel...
+                Link to code used in this video: http://codepen.io/anon/pen/VKxRoE?edi... Link to more about browser support:
+                http://caniuse.com/#feat=flexbox Add me on Twitter for webDev updates and cat pics: https://twitter.com/learnwebcode
+            </p>
+        </div>
+    </div>
+
+    <!-- call-out flex -->
+    <div class="call-outs-container">
+        <div class="call-out">
+            <h4>Feature 1</h4>
+            <p>
+                Learn how to use Flexbox to create different layouts. Link to my new "Git a Developer Job" course: https://www.udemy.com/git-a-web-devel...
+                Link to code used in this video: http://codepen.io/anon/pen/VKxRoE?edi... Link to more about browser support:
+                http://caniuse.com/#feat=flexbox Add me on Twitter for webDev updates and cat pics: https://twitter.com/learnwebcode
+            </p>
+        </div>
+        <div class="call-out">
+            <h4>Feature 2</h4>
+            <p>
+                Learn how to use Flexbox to create different layouts. Link to my new "Git a Developer Job" course: https://www.udemy.com/git-a-web-devel...
+                Link to code used in this video: http://codepen.io/anon/pen/VKxRoE?edi... Link to more about browser support:
+                http://caniuse.com/#feat=flexbox Add me on Twitter for webDev updates and cat pics: https://twitter.com/learnwebcode
+            </p>
+        </div>
+        <div class="call-out">
+            <h4>Feature 3</h4>
+            <p>
+                Learn how to use Flexbox to create different layouts. Link to my new "Git a Developer Job" course: https://www.udemy.com/git-a-web-devel...
+                Link to code used in this video: http://codepen.io/anon/pen/VKxRoE?edi... Link to more about browser support:
+                http://caniuse.com/#feat=flexbox Add me on Twitter for webDev updates and cat pics: https://twitter.com/learnwebcode
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
